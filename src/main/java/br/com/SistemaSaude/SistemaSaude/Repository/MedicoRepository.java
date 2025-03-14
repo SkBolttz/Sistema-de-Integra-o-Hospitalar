@@ -7,5 +7,7 @@ import br.com.SistemaSaude.SistemaSaude.Entity.Medico;
 
 @Repository
 public interface MedicoRepository extends JpaRepository<Medico,Long> {
+
+    Medico findByEmail(String username);
     
 }

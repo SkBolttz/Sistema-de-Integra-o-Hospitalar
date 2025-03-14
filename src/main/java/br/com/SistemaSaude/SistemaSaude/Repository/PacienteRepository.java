@@ -7,5 +7,7 @@ import br.com.SistemaSaude.SistemaSaude.Entity.Paciente;
 
 @Repository
 public interface PacienteRepository extends JpaRepository<Paciente,Long> {
+
+    Paciente findByEmail(String username);
     
 }

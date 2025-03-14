@@ -7,5 +7,7 @@ import br.com.SistemaSaude.SistemaSaude.Entity.Administrador;
 
 @Repository
 public interface AdministradorRepository extends JpaRepository<Administrador, Long> {
+
+    Administrador findByEmail(String username);
     
 }
